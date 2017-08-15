@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            transition-property: width, background-color;
+            transition-duration: 2s, 2s;
+            transition-delay: 0.5s;
+            /*设置过渡的速度，ease in out */
+            transition-timing-function: linear;
+            /*连写方法*/
+            /*transition: width 5s ease 0s;*/
+            transition: width 1s ease 0s, background-color 1s ease 0s;
+        }
+        div:hover{
+            width: 300px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>后代选择器</title>
+    <style>
+        div p{
+            color: red;
+        }
+        div ul li p{
+            color: green;
+        }
+        div>ul>li>p{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>我是段落</p>
+    <div>
+        <p>woshiduanluo</p>
+        <p>woshiduanluo</p>
+        <ul>
+            <li>
+                <p>我也是哦</p>
+            </li>
+        </ul>
+    </div>
+    <p>我是段落</p>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>3D播放器</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background: url("images/testImg2.png") no-repeat;
+            background-size: cover;
+            /*position: relative;*/
+            overflow: hidden;
+        }
+        ul{
+            width: 200px;
+            height: 200px;
+            /*background-color: red;*/
+            position: absolute;
+            bottom: 100px;
+            left: 50%;
+            margin-left: -100px;
+            transform-style: preserve-3d;
+            /*transform: rotateX(-10deg);*/
+            animation: sport 6s linear 0s infinite normal;
+        }
+        ul li{
+            list-style: none;
+            width: 200px;
+            height: 200px;
+            font-size: 60px;
+            text-align: center;
+            line-height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+
+        }
+        ul li:nth-child(1){
+            background-color: blue;
+            transform: rotateY(60deg) translateZ(200px);
+        }
+        ul li:nth-child(2){
+            background-color: red;
+            transform: rotateY(120deg) translateZ(200px);
+        }
+        ul li:nth-child(3){
+            background-color: yellow;
+            transform: rotateY(180deg) translateZ(200px);
+        }
+        ul li:nth-child(4){
+            background-color: pink;
+            transform: rotateY(240deg) translateZ(200px);
+        }
+        ul li:nth-child(5){
+            background-color: purple;
+            transform: rotateY(300deg) translateZ(200px);
+        }
+        ul li:nth-child(6){
+            background-color: skyblue;
+            transform: rotateY(360deg) translateZ(200px);
+        }
+        ul:hover{
+            animation-play-state: paused
+        }
+        ul:hover li{
+            opacity: 0.5;
+        }
+        @keyframes sport {
+            from{
+                /*动画中如果有和默认样式同名的属性，会覆盖这个同名属性，*/
+                /*在动画时候，固定不变的值写在前面，需要变化的值写在后面*/
+                transform: rotateX(-10deg) rotateY(0deg);
+            }
+            to{
+                transform: rotateX(-10deg) rotateY(360deg);
+            }
+        }
+        .heart{
+            width: 173px;
+            height: 157px;
+            position: absolute;
+            bottom: 100px;
+            left: 100px;
+            animation: move 10s linear 0s infinite normal;
+        }
+        @keyframes move {
+            0%{
+                left: 100px;;
+                bottom: 100px;
+                opacity: 1;
+            }
+            20%{
+                left: 300px;;
+                bottom: 300px;
+                opacity: 0;
+            }
+            40%{
+                left: 500px;
+                bottom: 800px;
+                opacity: 1;
+            }
+            60%{
+                left: 1200px;
+                bottom: 300px;
+                opacity: 0;
+            }
+            80%{
+                left: 1600px;
+                bottom: 100px;
+                opacity: 1;
+            }
+            100%{
+                left: 800px;
+                bottom: -200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+</ul>
+<img src="images/testImg5.png" alt="" class="heart">
+<audio src="images/....mp3" autoplay="autoplay"></audio>
+</body>
+</html>

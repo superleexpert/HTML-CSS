@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        ul{
+            list-style: none;
+            width: 800px;
+            height: 50px;
+            background-color: red;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        ul li{
+            float: left;
+            width: 100px;
+            line-height: 50px;
+            text-align: center;
+            background-color: gray;
+        }
+        ul li:nth-of-type(4){
+            background-color: yellow;
+            position: relative;
+        }
+        ul li img{
+            /*相对于标准流中的位置，弊端：定位后以前在标准流中的位置还是被占用着的，所以再企业开发中相对较少使用相对定位*/
+            /*position: relative;*/
+            /*left: -42px;*/
+            /*top: -18px;*/
+
+            /*绝对定位，弊端：默认情况下会以body作为参考点，会随着浏览器高度变化而变化*/
+            /*position: absolute;*/
+            /*left: 870px;*/
+            /*top: 82px;*/
+
+            /*子绝父相*/
+            position: absolute;
+            left: 30px;
+            top: -15px;
+
+            /*绝对定位元素水平居中*/
+            position: absolute;
+            left: 50%;
+            margin-left: -20px;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li>阿萨德</li>
+    <li>史蒂夫</li>
+    <li>史蒂夫</li>
+    <li>地方哦
+        <img src="images/hot.png" alt="">
+    </li>
+    <li>CVBS</li>
+    <li>CVBS</li>
+    <li>v啊</li>
+    <li>请问</li>
+</ul>
+</body>
+</html>

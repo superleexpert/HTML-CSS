@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            width: 310px;
+            height: 438px;
+            border: 1px solid #000000;
+            background-color: skyblue;
+            margin: 100px auto;
+            perspective: 500px;
+        }
+        div img{
+            width: 310px;
+            height: 438px;
+            transform-origin: center bottom;
+            transition: transform 1s;
+        }
+        div:hover img{
+            transform: rotateX(80deg);
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/pk.png" alt="">
+    </div>
+</body>
+</html>

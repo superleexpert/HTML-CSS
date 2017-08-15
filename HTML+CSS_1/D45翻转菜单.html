@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>综合练习</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        .nav{
+            width: 400px;
+            height: 40px;
+            background-color: black;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+        /*>是子元素选择器，只找到它的儿子元素*/
+        .nav>li{
+            list-style: none;
+            float: left;
+            width: 120px;
+            height: 40px;
+            background-color: green;
+            margin-left: 10px;
+            text-align: center;
+            line-height: 40px;
+            position: relative;
+        }
+        .sub{
+            /*不显示元素*/
+            /*display: none;*/
+            width: 120px;
+            left: 0px;
+            top: 40px;
+            position: absolute;
+        }
+        .sub li{
+            list-style: none;
+            background-color: pink;
+            transform: rotateY(180deg);
+            transition: all 1s;
+            opacity: 0;
+        }
+        /*.nav>li:hover .sub{*/
+            /*display: block;*/
+        /*}*/
+        .nav>li:hover .sub li{
+            transform: none;
+            /*transform: rotateY(180deg);*/
+            opacity: 1;
+        }
+        .nav>li:hover .sub li:nth-child(1) {
+            transition-delay: 0ms;
+        }
+        .nav>li:hover .sub li:nth-child(2) {
+            transition-delay: 200ms;
+        }
+        .nav>li:hover .sub li:nth-child(3) {
+            transition-delay: 400ms;
+        }
+        .nav>li:hover .sub li:nth-child(4) {
+            transition-delay: 600ms;
+        }
+        .nav>li:hover .sub li:nth-child(5) {
+            transition-delay: 800ms;
+        }
+        .nav>li .sub li:nth-child(5){
+            transition-delay: 0ms;
+        }
+        .nav>li .sub li:nth-child(4){
+            transition-delay: 200ms;
+        }
+        .nav>li .sub li:nth-child(3){
+            transition-delay: 400ms;
+        }
+        .nav>li .sub li:nth-child(2){
+            transition-delay: 600ms;
+        }
+        .nav>li .sub li:nth-child(1){
+            transition-delay: 800ms;
+        }
+        div{
+            background-color: red;
+            width: 400px;
+            height: 300px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<ul class="nav">
+    <li>一级菜单
+        <ul class="sub">
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+    <li>一级菜单
+        <ul class="sub">
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+    <li>一级菜单
+        <ul class="sub">
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+            <li>二级菜单</li>
+        </ul>
+    </li>
+</ul>
+<div>啊三德科技啊卡老实交代卡仕达阿克苏决定了卡就是懒得看加快了圣诞节啦；就是打开啦就是考虑；大家啊了看的捡垃圾登录卡视角的拉丝机的阿萨德阿萨德阿萨德</div>
+</body>
+</html>

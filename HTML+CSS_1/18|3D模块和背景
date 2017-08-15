@@ -1,0 +1,29 @@
+3D就是一个立体，有宽度和高度，还有厚度，默认情况下所有元素都是展现2D
+给需要呈现3D的元素的父元素添加一个transform-style属性，然后设置为reserve-3d即可
+
+---背景相关--
+background
+no-repeat
+background-size 宽度 高度（像素、百分比）
+auto可以设置等比拉伸
+background-size： cover：
+1。告诉宽度和高度都等比拉伸
+2。宽度和高度都拉伸到填满元素
+contain：
+1。告诉宽度和高度都等比拉伸
+2。宽度或高度都拉伸到填满元素
+
+background-origin：padding-box
+告诉系统背景图片从什么区域开始显示，默认从padding区域开始显示
+
+background-origin：border-box
+告诉系统背景图片从什么区域开始显示，默认从border区域开始显示
+
+background-origin：content-box
+告诉系统背景图片从什么区域开始显示，默认从content区域开始显示
+
+background-clip：背景区域绘制，默认从border开始绘制
+
+--多重背景图片--
+多张背景图片用逗号隔开
+

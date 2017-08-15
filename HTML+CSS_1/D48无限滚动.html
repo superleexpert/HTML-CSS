@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>无线滚动</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        div{
+            width: 600px;
+            height: 188px;
+            border:1px solid black;
+            margin: 100px auto;
+            overflow: hidden;
+        }
+        ul{
+            width: 2000px;
+            height: 188px;
+            /*border:1px solid black;*/
+            /*margin: 100px auto;*/
+            background-color: black;
+            animation: move 8s linear infinite normal;
+        }
+        ul li{
+            float: left;
+            list-style: none;
+            width: 300px;
+            height: 188px;
+            background-color: green;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        ul li img{
+            width: 300px;
+            height: 188px;
+        }
+        ul:hover{
+            animation-play-state: paused;
+        }
+        ul:hover li{
+            opacity: 0.5;
+        }
+        ul li:hover{
+            opacity: 1;
+        }
+        @keyframes move {
+            from{
+                margin-left: 0px;
+            }
+            to{
+                margin-left: -1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+<div>
+<ul>
+    <li><img src="images/yun1.jpg" alt=""></li>
+    <li><img src="images/yun2.jpg" alt=""></li>
+    <li><img src="images/yun3.png" alt=""></li>
+    <li><img src="images/yun1.jpg" alt=""></li>
+    <li><img src="images/yun1.jpg" alt=""></li>
+    <li><img src="images/yun2.jpg" alt=""></li>
+</ul>
+</div>
+</body>
+</html>

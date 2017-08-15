@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        ul{
+            width: 960px;
+            height: 40px;
+            background-color: green;
+            margin: 0 auto;
+        }
+        ul li{
+            list-style: none;
+            width: 120px;
+            height: 40px;
+            float: left;
+            text-align: center;
+            line-height: 40px;
+        }
+        /*伪类选择器最好卸载标签选择器的后面*/
+        /*和a标签盒子相关的属性都写在标签选择器中（显示模式 宽度高度 padding marging）*/
+        ul li a{
+            color: gray;
+            width: 120px;
+            height: 40px;
+            display: inline-block;
+        }
+        ul li a:link{
+            color: pink;
+            text-decoration: none;
+        }
+        ul li a:hover{
+            color: red;
+            background-color: #cccccc;
+        }
+        ul li a:active{
+            color: yellow;
+        }
+    </style>
+</head>
+<body>
+<ul>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+    <li><a href="#">我是导航</a></li>
+</ul>
+</body>
+</html>

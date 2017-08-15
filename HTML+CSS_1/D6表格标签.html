@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格标签</title>
+</head>
+<body>
+    <table border="1">
+        <tr>
+            <td>111</td>
+            <td>222</td>
+            <td>333</td>
+        </tr>
+        <tr>
+            <td>4444</td>
+            <td>5555555</td>
+            <td>66666666666</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table border="1" width="500px" height="300px" align="center" cellspacing="10" cellpadding="5">
+        <tr>
+            <td width="120px" height="100px">1.1</td>
+            <td valign="top">1.2</td>
+        </tr>
+        <tr align="center">
+            <td align="right">2.1</td>
+            <td>2.2</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table bgcolor="black" width="300px" height="300px" align="center">
+        <tr bgcolor="white" align="center">
+            <td>1.1</td>
+            <td>1.2</td>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>2.1</td>
+            <td>2.2</td>
+        </tr>
+    </table>
+    <hr>
+
+    <table bgcolor="black" cellspacing="1" width="800">
+        <caption>
+            <h2 align="center">今日排行榜</h2>
+        </caption>
+        <tr bgcolor="#a9a9a9" align="center">
+            <th>排名</th>
+            <th>关键词</th>
+            <th>趋势</th>
+            <th>链接</th>
+            <th>今日搜索</th>
+            <th>相同</th>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>1</td>
+            <td align="left">大事件</td>
+            <td>
+                <img src="images/testImg2.png" alt="" width="20" height="20">
+            </td>
+            <td>234232344</td>
+            <td>45645</td>
+            <td>
+                <a href="">贴吧</a>
+                <a href="">图片</a>
+                <a href="">百科</a>
+            </td>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>1</td>
+            <td align="left">大事件</td>
+            <td>
+                <img src="images/testImg1.png" alt="" width="20" height="20">
+            </td>
+            <td>234232344</td>
+            <td>45645</td>
+            <td>
+                <a href="">贴吧</a>
+                <a href="">图片</a>
+                <a href="">百科</a>
+            </td>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>1</td>
+            <td align="left">大事件</td>
+            <td>
+                <img src="images/testImg1.png" alt="" width="20" height="20">
+            </td>
+            <td>234232344</td>
+            <td>45645</td>
+            <td>
+                <a href="">贴吧</a>
+                <a href="">图片</a>
+                <a href="">百科</a>
+            </td>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>1</td>
+            <td align="left">大事件</td>
+            <td>
+                <img src="images/testImg2.png" alt="" width="20" height="20">
+            </td>
+            <td>234232344</td>
+            <td>45645</td>
+            <td>
+                <a href="">贴吧</a>
+                <a href="">图片</a>
+                <a href="">百科</a>
+            </td>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>1</td>
+            <td align="left">大事件</td>
+            <td>
+                <img src="images/testImg2.png" alt="" width="20" height="20">
+            </td>
+            <td>234232344</td>
+            <td>45645</td>
+            <td>
+                <a href="">贴吧</a>
+                <a href="">图片</a>
+                <a href="">百科</a>
+            </td>
+        </tr>
+        <tr bgcolor="white" align="center">
+            <td>1</td>
+            <td align="left">大事件</td>
+            <td>
+                <img src="images/testImg2.png" alt="" width="20" height="20">
+            </td>
+            <td>234232344</td>
+            <td>45645</td>
+            <td>
+                <a href="">贴吧</a>
+                <a href="">图片</a>
+                <a href="">百科</a>
+            </td>
+        </tr>
+    </table>
+    <hr>
+
+<!--表格的完整结构-->
+    <table border="1" width="500px" height="200px">
+        <caption>表格的标题，学生信息</caption>
+        <thead></thead>
+            <tr>
+                <th>姓名</th>
+                <th>年龄</th>
+            </tr>
+        <tbody>
+            <tr>
+                <th>李四</th>
+                <th>40</th>
+            </tr>
+        </tbody>
+        <tfoot align="center">
+            <tr>
+                <td>6</td>
+                <td>85</td>
+            </tr>
+        </tfoot>
+    </table>
+<!--注意点：没有编写tbody，系统会自动添加-->
+    <hr>
+
+<!--单元格合并-->
+    <table border="1" bgcolor="black" width="100" height="100">
+        <tr bgcolor="white">
+            <td colspan="2"></td>
+            <!--<td></td>-->
+            <td></td>
+        </tr>
+        <tr bgcolor="white">
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr bgcolor="white">
+            <td></td>
+            <td colspan="2"></td>
+            <!--<td></td>-->
+        </tr>
+    </table>
+</body>
+</html>
